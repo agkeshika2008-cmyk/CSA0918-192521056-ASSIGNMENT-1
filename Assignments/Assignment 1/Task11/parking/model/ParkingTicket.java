@@ -4,6 +4,7 @@ public final class ParkingTicket implements Comparable<ParkingTicket>,Reportable
     private static int lastTicketNo;
     static {lastTicketNo=1000;}
     private static int nextTicketNo(){return ++lastTicketNo;}
+    public static int getLastTicketNo(){return lastTicketNo;}
     private final int ticketNo;
     private final Vehicle vehicle;
     private final ParkingUser user;
