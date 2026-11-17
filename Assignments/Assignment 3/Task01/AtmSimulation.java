@@ -26,7 +26,7 @@ public class AtmSimulation {
             System.out.print("Withdrawal amount: ");
             double amount = Double.parseDouble(sc.nextLine().trim());
             account.withdraw(amount);
-        } catch (NumberFormatException | IllegalArgumentException e) {
+        } catch (IllegalArgumentException e) {
             System.out.println("Input error: " + e.getMessage());
         } catch (InvalidAmountException e) {
             System.out.println("Invalid withdrawal: " + e.getMessage());
